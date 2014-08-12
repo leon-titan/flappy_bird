@@ -43,7 +43,7 @@ public class MoveBG implements WorldObj {
         conduitDelay = 0;
     }
 
-    public void reset(){
+    public void reset() {
         for (Conduit conduit : conduits) {
             if (!conduit.isDead()) {
                 conduit.setDead(true);
@@ -69,7 +69,7 @@ public class MoveBG implements WorldObj {
         }
     }
 
-    public void addConduit(float delta){
+    public void addConduit(float delta) {
         conduitDelay += delta;
         if (conduitDelay > CONDUIT_DELAY) {
             conduitDelay -= CONDUIT_DELAY;
